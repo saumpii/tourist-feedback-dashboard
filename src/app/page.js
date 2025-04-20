@@ -7,7 +7,7 @@ import AISummary from '@/components/AISummary'
 import ReviewList from '@/components/ReviewList'
 import ChatWithData from '@/components/ChatWithData'
 import UpdateDataPopup from '@/components/UpdateDataPopup'
-
+import TestSurveyForm from '@/components/TestSurveyForm'
 
 export default function Home() {
   const [allReviews, setAllReviews] = useState([])
@@ -19,6 +19,7 @@ export default function Home() {
     cities: [],
     pincodes: [],
     category: null,
+    source: null,
     startDate: '',
     endDate: ''
   })
@@ -28,18 +29,20 @@ export default function Home() {
       .then(res => res.json())
       .then(data => setCitiesData(data || []))
 
-    fetch('/goa_reviews.json')
+    // ✅ Fetch from MongoDB instead of static JSON
+    fetch('/api/reviews')
       .then(res => res.json())
-      .then(data => {
-        const normalized = (data || []).map(item => ({
-          city: item["City"],
-          pincode: item["Pincode"],
-          name: item["Name"],
-          category: item["Category"],
-          review: item["Review"],
-          rating: item["Rating"],
+      .then(result => {
+        const normalized = (result.data || []).map(item => ({
+          city: item.City || 'Unknown',
+          pincode: item.Pincode || 'Unknown',
+          name: item.Name || 'Unknown',
+          category: item.Category || 'Unknown',
+          review: item.Review,
+          rating: item.Rating,
           date: item["Date of review"],
-          source: item["Source"]
+          source: item.Source || 'Unknown',
+          aiGeneratedFields: item.aiGeneratedFields || []
         }))
         setAllReviews(normalized)
       })
@@ -53,11 +56,10 @@ export default function Home() {
       (cityNames.length === 0 || cityNames.includes(r.city)) &&
       (pincodeValues.length === 0 || pincodeValues.includes(r.pincode)) &&
       (!filters.category || r.category === filters.category.value) &&
-      (!filters.source || r.source === filters.source.value) &&  // ✅ add this line
+      (!filters.source || r.source === filters.source.value) &&
       (!filters.startDate || new Date(r.date) >= new Date(filters.startDate)) &&
       (!filters.endDate || new Date(r.date) <= new Date(filters.endDate))
-    )
-    
+    ).sort((a, b) => new Date(b.date) - new Date(a.date)) 
 
     setFilteredReviews(filtered)
   }, [allReviews, filters])
@@ -67,28 +69,26 @@ export default function Home() {
       <h1 className="text-4xl font-extrabold mb-8 text-center text-purple-400 drop-shadow-md tracking-wide">
         🎯 Aamche GOI
       </h1>
-
-      {/* Filters */}
+      
       <div className="bg-[#1a1a40] shadow-2xl border border-purple-600 rounded-xl p-6 mb-10">
         <h2 className="text-lg font-bold mb-3 text-purple-300">🎛️ Apply Your Filters</h2>
         <Filters
-  citiesData={citiesData || []}
-  filteredData={allReviews || []}  // 👈 For source dropdown
-  filters={filters}
-  setFilters={setFilters}
-/>
+          citiesData={citiesData || []}
+          filteredData={allReviews || []}
+          filters={filters}
+          setFilters={setFilters}
+        />
       </div>
 
-      {/* Charts */}
       <div className="bg-[#1a1a40] shadow-2xl border border-blue-500 rounded-xl p-6 mb-10">
         <h2 className="text-lg font-bold mb-4 text-blue-300">📊 Live Feedback Visuals</h2>
         <ChartView filteredData={filteredReviews || []} />
       </div>
 
-      {/* CTA Row */}
       <div className="flex flex-wrap gap-4 mb-8 items-center">
         <AIInsights filteredData={filteredReviews || []} />
         <AISummary filteredData={filteredReviews || []} />
+        <TestSurveyForm/>
         <UpdateDataPopup />
 
         <button
@@ -102,7 +102,6 @@ export default function Home() {
         </p>
       </div>
 
-      {/* Review Section */}
       {showFeedback && (
         <div className="bg-[#1a1a40] shadow-2xl border border-pink-600 rounded-xl p-6 mb-12">
           <h2 className="text-lg font-bold mb-4 text-pink-300">🗂️ Feedback Logs</h2>
@@ -110,7 +109,6 @@ export default function Home() {
         </div>
       )}
 
-      {/* Floating Chat */}
       <ChatWithData filteredData={filteredReviews || []} />
     </div>
   )

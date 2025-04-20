@@ -3,9 +3,9 @@
     "City": "Navelim",
     "Pincode": "403707",
     "Name": "Beach Retreat",
-    "Category": "Safety",
+    "Category": "",
     "Review": "Goa police is quite responsive.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2024-04-05",
     "Source": "Social Media"
   },
@@ -13,9 +13,9 @@
     "City": "Porvorim",
     "Pincode": "403501",
     "Name": "Sunset Shack",
-    "Category": "Stay",
+    "Category": "",
     "Review": "Amazing beachfront resort!",
-    "Rating": 4,
+    "Rating": "",
     "Date of review": "2024-03-24",
     "Source": "Social Media"
   },
@@ -23,9 +23,9 @@
     "City": "Siolim",
     "Pincode": "403517",
     "Name": "Palm Grove",
-    "Category": "Traffic",
+    "Category": "",
     "Review": "Heavy traffic during evening hours.",
-    "Rating": 4,
+    "Rating": "",
     "Date of review": "2023-11-25",
     "Source": "Survey"
   },
@@ -35,7 +35,7 @@
     "Name": "Sunset Shack",
     "Category": "Safety",
     "Review": "Some areas lacked street lights.",
-    "Rating": 4,
+    "Rating": "",
     "Date of review": "2024-04-03",
     "Source": "Survey"
   },
@@ -45,7 +45,7 @@
     "Name": "Goa Palace",
     "Category": "Fraud",
     "Review": "Fraudulent guide experience.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2023-05-03",
     "Source": "Online Reviews"
   },
@@ -55,7 +55,7 @@
     "Name": "",
     "Category": "Restaurant",
     "Review": "Loved the seafood options.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2024-11-21",
     "Source": "Online Reviews"
   },
@@ -65,7 +65,7 @@
     "Name": "Sunset Shack",
     "Category": "Traffic",
     "Review": "Roads are narrow but manageable.",
-    "Rating": 3,
+    "Rating": "",
     "Date of review": "2024-08-02",
     "Source": "Social Media"
   },
@@ -75,7 +75,7 @@
     "Name": "",
     "Category": "Traffic",
     "Review": "Traffic police doing great job. It exceeded my expectations in every possible way.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2023-04-07",
     "Source": "Online Reviews"
   },
@@ -85,7 +85,7 @@
     "Name": "",
     "Category": "Parking",
     "Review": "Ample parking space available. Would definitely recommend this place to others.",
-    "Rating": 4,
+    "Rating": "",
     "Date of review": "2024-11-29",
     "Source": "Survey"
   },
@@ -95,7 +95,7 @@
     "Name": "Sunset Shack",
     "Category": "Restaurant",
     "Review": "Great food, cozy place.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2024-09-17",
     "Source": "Survey"
   },
@@ -105,7 +105,7 @@
     "Name": "Sunset Shack",
     "Category": "Food",
     "Review": "Amazing variety of cuisines.",
-    "Rating": 2,
+    "Rating": "",
     "Date of review": "2023-05-28",
     "Source": "Survey"
   },
