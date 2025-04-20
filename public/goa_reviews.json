@@ -1,0 +1,902 @@
+[
+  {
+    "City": "Mapusa",
+    "Pincode": "403519",
+    "Name": "Sunset Shack",
+    "Category": "Parking",
+    "Review": "Ample parking space available.",
+    "Rating": 5,
+    "Date of review": "2023-02-11"
+  },
+  {
+    "City": "Mandrem",
+    "Pincode": "403527",
+    "Name": "Goa Palace",
+    "Category": "Stay",
+    "Review": "Rooms were not clean.",
+    "Rating": 4,
+    "Date of review": "2025-03-28"
+  },
+  {
+    "City": "Mapusa",
+    "Pincode": "403507",
+    "Name": "",
+    "Category": "Pricing",
+    "Review": "Reasonably priced souvenirs.",
+    "Rating": 2,
+    "Date of review": "2025-01-18"
+  },
+  {
+    "City": "Panaji",
+    "Pincode": "403001",
+    "Name": "Sunset Shack",
+    "Category": "Culture",
+    "Review": "Locals were very welcoming.",
+    "Rating": 4,
+    "Date of review": "2023-07-05"
+  },
+  {
+    "City": "Curtorim",
+    "Pincode": "403709",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Clinic was hard to locate.",
+    "Rating": 3,
+    "Date of review": "2025-03-19"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "",
+    "Category": "Travel",
+    "Review": "Public transport was convenient.",
+    "Rating": 5,
+    "Date of review": "2024-07-17"
+  },
+  {
+    "City": "Mandrem",
+    "Pincode": "403527",
+    "Name": "Sunset Shack",
+    "Category": "Culture",
+    "Review": "Great heritage walk.",
+    "Rating": 2,
+    "Date of review": "2023-11-26"
+  },
+  {
+    "City": "Palolem",
+    "Pincode": "403702",
+    "Name": "Goa Palace",
+    "Category": "Pricing",
+    "Review": "Very expensive for basic amenities.",
+    "Rating": 2,
+    "Date of review": "2023-05-10"
+  },
+  {
+    "City": "Morjim",
+    "Pincode": "403512",
+    "Name": "Beach Retreat",
+    "Category": "Stay",
+    "Review": "Rooms were not clean.",
+    "Rating": 5,
+    "Date of review": "2023-11-12"
+  },
+  {
+    "City": "Quepem",
+    "Pincode": "403705",
+    "Name": "Cafe Rio",
+    "Category": "Culture",
+    "Review": "Rich cultural experience.",
+    "Rating": 1,
+    "Date of review": "2025-02-21"
+  },
+  {
+    "City": "Chinchinim",
+    "Pincode": "403715",
+    "Name": "",
+    "Category": "Travel",
+    "Review": "Loved the scenic drive!",
+    "Rating": 4,
+    "Date of review": "2023-03-13"
+  },
+  {
+    "City": "Porvorim",
+    "Pincode": "403501",
+    "Name": "",
+    "Category": "Stay",
+    "Review": "Hotel staff was very friendly.",
+    "Rating": 2,
+    "Date of review": "2023-03-23"
+  },
+  {
+    "City": "Arambol",
+    "Pincode": "403524",
+    "Name": "Sunset Shack",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 2,
+    "Date of review": "2024-05-11"
+  },
+  {
+    "City": "Palolem",
+    "Pincode": "403702",
+    "Name": "Beach Retreat",
+    "Category": "Fraud",
+    "Review": "Was scammed at a souvenir shop.",
+    "Rating": 5,
+    "Date of review": "2023-12-15"
+  },
+  {
+    "City": "Canacona",
+    "Pincode": "403702",
+    "Name": "Hotel Sunshine",
+    "Category": "Restaurant",
+    "Review": "Loved the seafood options.",
+    "Rating": 1,
+    "Date of review": "2023-06-11"
+  },
+  {
+    "City": "Aldona",
+    "Pincode": "403508",
+    "Name": "Palm Grove",
+    "Category": "Parking",
+    "Review": "Ample parking space available.",
+    "Rating": 2,
+    "Date of review": "2023-05-25"
+  },
+  {
+    "City": "Calangute",
+    "Pincode": "403516",
+    "Name": "Cafe Rio",
+    "Category": "Culture",
+    "Review": "Great heritage walk.",
+    "Rating": 1,
+    "Date of review": "2025-01-24"
+  },
+  {
+    "City": "Morjim",
+    "Pincode": "403512",
+    "Name": "Sunset Shack",
+    "Category": "Travel",
+    "Review": "Too much traffic on the way.",
+    "Rating": 2,
+    "Date of review": "2024-10-02"
+  },
+  {
+    "City": "Mapusa",
+    "Pincode": "403507",
+    "Name": "Sunset Shack",
+    "Category": "Pricing",
+    "Review": "Affordable travel overall.",
+    "Rating": 4,
+    "Date of review": "2023-01-27"
+  },
+  {
+    "City": "Sanguem",
+    "Pincode": "403704",
+    "Name": "Palm Grove",
+    "Category": "Culture",
+    "Review": "Locals were very welcoming.",
+    "Rating": 2,
+    "Date of review": "2025-03-26"
+  },
+  {
+    "City": "Cuncolim",
+    "Pincode": "403703",
+    "Name": "Goa Palace",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 5,
+    "Date of review": "2024-03-02"
+  },
+  {
+    "City": "Porvorim",
+    "Pincode": "403501",
+    "Name": "Palm Grove",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 3,
+    "Date of review": "2025-01-20"
+  },
+  {
+    "City": "Anjuna",
+    "Pincode": "403509",
+    "Name": "Goa Palace",
+    "Category": "Culture",
+    "Review": "Great heritage walk.",
+    "Rating": 5,
+    "Date of review": "2023-10-09"
+  },
+  {
+    "City": "Arambol",
+    "Pincode": "403524",
+    "Name": "Hotel Sunshine",
+    "Category": "Traffic",
+    "Review": "Traffic police doing great job.",
+    "Rating": 5,
+    "Date of review": "2024-11-03"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "",
+    "Category": "Parking",
+    "Review": "Ample parking space available.",
+    "Rating": 4,
+    "Date of review": "2023-09-21"
+  },
+  {
+    "City": "Morjim",
+    "Pincode": "403512",
+    "Name": "Palm Grove",
+    "Category": "Traffic",
+    "Review": "Roads are narrow but manageable.",
+    "Rating": 1,
+    "Date of review": "2024-02-10"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "Beach Retreat",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 1,
+    "Date of review": "2023-03-22"
+  },
+  {
+    "City": "Margao",
+    "Pincode": "403602",
+    "Name": "Hotel Sunshine",
+    "Category": "Travel",
+    "Review": "Public transport was convenient.",
+    "Rating": 2,
+    "Date of review": "2024-01-21"
+  },
+  {
+    "City": "Cavelossim",
+    "Pincode": "403731",
+    "Name": "",
+    "Category": "Food",
+    "Review": "Delicious street food everywhere!",
+    "Rating": 4,
+    "Date of review": "2023-07-03"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Was scammed at a souvenir shop.",
+    "Rating": 2,
+    "Date of review": "2023-01-05"
+  },
+  {
+    "City": "Curtorim",
+    "Pincode": "403709",
+    "Name": "Goa Palace",
+    "Category": "Traffic",
+    "Review": "Heavy traffic during evening hours.",
+    "Rating": 3,
+    "Date of review": "2024-08-16"
+  },
+  {
+    "City": "Arambol",
+    "Pincode": "403524",
+    "Name": "Goa Palace",
+    "Category": "Travel",
+    "Review": "Too much traffic on the way.",
+    "Rating": 2,
+    "Date of review": "2023-03-28"
+  },
+  {
+    "City": "Arambol",
+    "Pincode": "403524",
+    "Name": "Beach Retreat",
+    "Category": "Culture",
+    "Review": "Locals were very welcoming.",
+    "Rating": 2,
+    "Date of review": "2024-03-03"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "",
+    "Category": "Parking",
+    "Review": "Ample parking space available.",
+    "Rating": 5,
+    "Date of review": "2023-05-07"
+  },
+  {
+    "City": "Baga",
+    "Pincode": "403516",
+    "Name": "Sunset Shack",
+    "Category": "Parking",
+    "Review": "Ample parking space available.",
+    "Rating": 4,
+    "Date of review": "2023-04-18"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "",
+    "Category": "Pricing",
+    "Review": "Affordable travel overall.",
+    "Rating": 4,
+    "Date of review": "2023-06-04"
+  },
+  {
+    "City": "Fatorda",
+    "Pincode": "403602",
+    "Name": "Palm Grove",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 5,
+    "Date of review": "2023-06-19"
+  },
+  {
+    "City": "Panaji",
+    "Pincode": "403002",
+    "Name": "Sunset Shack",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 3,
+    "Date of review": "2025-02-01"
+  },
+  {
+    "City": "Baga",
+    "Pincode": "403516",
+    "Name": "Cafe Rio",
+    "Category": "Travel",
+    "Review": "Too much traffic on the way.",
+    "Rating": 3,
+    "Date of review": "2023-04-19"
+  },
+  {
+    "City": "Aldona",
+    "Pincode": "403508",
+    "Name": "Hotel Sunshine",
+    "Category": "Restaurant",
+    "Review": "Loved the seafood options.",
+    "Rating": 3,
+    "Date of review": "2025-01-18"
+  },
+  {
+    "City": "Baga",
+    "Pincode": "403516",
+    "Name": "",
+    "Category": "Pricing",
+    "Review": "Very expensive for basic amenities.",
+    "Rating": 1,
+    "Date of review": "2024-12-09"
+  },
+  {
+    "City": "Fatorda",
+    "Pincode": "403602",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 3,
+    "Date of review": "2023-02-14"
+  },
+  {
+    "City": "Vasco da Gama",
+    "Pincode": "403802",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 1,
+    "Date of review": "2024-12-02"
+  },
+  {
+    "City": "Mandrem",
+    "Pincode": "403527",
+    "Name": "Beach Retreat",
+    "Category": "Fraud",
+    "Review": "Fraudulent guide experience.",
+    "Rating": 4,
+    "Date of review": "2023-05-26"
+  },
+  {
+    "City": "Vasco da Gama",
+    "Pincode": "403802",
+    "Name": "Sunset Shack",
+    "Category": "Fraud",
+    "Review": "Was scammed at a souvenir shop.",
+    "Rating": 2,
+    "Date of review": "2023-09-02"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "",
+    "Category": "Travel",
+    "Review": "Loved the scenic drive!",
+    "Rating": 2,
+    "Date of review": "2025-02-22"
+  },
+  {
+    "City": "Canacona",
+    "Pincode": "403702",
+    "Name": "Cafe Rio",
+    "Category": "Safety",
+    "Review": "Goa police is quite responsive.",
+    "Rating": 2,
+    "Date of review": "2023-01-15"
+  },
+  {
+    "City": "Canacona",
+    "Pincode": "403702",
+    "Name": "Goa Palace",
+    "Category": "Stay",
+    "Review": "Rooms were not clean.",
+    "Rating": 1,
+    "Date of review": "2024-11-11"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "Hotel Sunshine",
+    "Category": "Cleanliness",
+    "Review": "Too much litter near tourist spots.",
+    "Rating": 2,
+    "Date of review": "2023-01-24"
+  },
+  {
+    "City": "Morjim",
+    "Pincode": "403512",
+    "Name": "Sunset Shack",
+    "Category": "Safety",
+    "Review": "Some areas lacked street lights.",
+    "Rating": 5,
+    "Date of review": "2024-10-24"
+  },
+  {
+    "City": "Vasco da Gama",
+    "Pincode": "403802",
+    "Name": "Beach Retreat",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 3,
+    "Date of review": "2024-12-25"
+  },
+  {
+    "City": "Mapusa",
+    "Pincode": "403519",
+    "Name": "Hotel Sunshine",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 2,
+    "Date of review": "2024-02-26"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "",
+    "Category": "Culture",
+    "Review": "Great heritage walk.",
+    "Rating": 4,
+    "Date of review": "2024-01-18"
+  },
+  {
+    "City": "Calangute",
+    "Pincode": "403516",
+    "Name": "Beach Retreat",
+    "Category": "Pricing",
+    "Review": "Very expensive for basic amenities.",
+    "Rating": 5,
+    "Date of review": "2024-05-08"
+  },
+  {
+    "City": "Aldona",
+    "Pincode": "403508",
+    "Name": "Sunset Shack",
+    "Category": "Fraud",
+    "Review": "Beware of taxi overcharges.",
+    "Rating": 1,
+    "Date of review": "2024-04-18"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "Hotel Sunshine",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 1,
+    "Date of review": "2023-12-06"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Was scammed at a souvenir shop.",
+    "Rating": 1,
+    "Date of review": "2023-12-26"
+  },
+  {
+    "City": "Siolim",
+    "Pincode": "403517",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Beware of taxi overcharges.",
+    "Rating": 3,
+    "Date of review": "2023-06-26"
+  },
+  {
+    "City": "Cavelossim",
+    "Pincode": "403731",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Beware of taxi overcharges.",
+    "Rating": 4,
+    "Date of review": "2024-07-12"
+  },
+  {
+    "City": "Benaulim",
+    "Pincode": "403716",
+    "Name": "Hotel Sunshine",
+    "Category": "Restaurant",
+    "Review": "Service was too slow.",
+    "Rating": 1,
+    "Date of review": "2025-03-18"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 5,
+    "Date of review": "2023-03-14"
+  },
+  {
+    "City": "Canacona",
+    "Pincode": "403702",
+    "Name": "Palm Grove",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 4,
+    "Date of review": "2025-02-07"
+  },
+  {
+    "City": "Chinchinim",
+    "Pincode": "403715",
+    "Name": "Cafe Rio",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 2,
+    "Date of review": "2023-07-12"
+  },
+  {
+    "City": "Cuncolim",
+    "Pincode": "403703",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 4,
+    "Date of review": "2024-10-16"
+  },
+  {
+    "City": "Margao",
+    "Pincode": "403602",
+    "Name": "Goa Palace",
+    "Category": "Stay",
+    "Review": "Amazing beachfront resort!",
+    "Rating": 1,
+    "Date of review": "2023-02-07"
+  },
+  {
+    "City": "Palolem",
+    "Pincode": "403702",
+    "Name": "",
+    "Category": "Stay",
+    "Review": "Hotel staff was very friendly.",
+    "Rating": 4,
+    "Date of review": "2024-12-12"
+  },
+  {
+    "City": "Porvorim",
+    "Pincode": "403501",
+    "Name": "",
+    "Category": "Restaurant",
+    "Review": "Great food, cozy place.",
+    "Rating": 1,
+    "Date of review": "2023-08-26"
+  },
+  {
+    "City": "Morjim",
+    "Pincode": "403512",
+    "Name": "Goa Palace",
+    "Category": "Food",
+    "Review": "Amazing variety of cuisines.",
+    "Rating": 3,
+    "Date of review": "2024-05-27"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "Cafe Rio",
+    "Category": "Culture",
+    "Review": "Locals were very welcoming.",
+    "Rating": 2,
+    "Date of review": "2025-01-05"
+  },
+  {
+    "City": "Baga",
+    "Pincode": "403516",
+    "Name": "Sunset Shack",
+    "Category": "Cleanliness",
+    "Review": "Too much litter near tourist spots.",
+    "Rating": 4,
+    "Date of review": "2024-11-22"
+  },
+  {
+    "City": "Margao",
+    "Pincode": "403602",
+    "Name": "",
+    "Category": "Safety",
+    "Review": "Felt safe even at night.",
+    "Rating": 1,
+    "Date of review": "2025-03-20"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "Sunset Shack",
+    "Category": "Medical services",
+    "Review": "Clinic was hard to locate.",
+    "Rating": 1,
+    "Date of review": "2024-11-12"
+  },
+  {
+    "City": "Anjuna",
+    "Pincode": "403509",
+    "Name": "Sunset Shack",
+    "Category": "Food",
+    "Review": "Overpriced meals at beach shacks.",
+    "Rating": 4,
+    "Date of review": "2024-08-31"
+  },
+  {
+    "City": "Chapora",
+    "Pincode": "403509",
+    "Name": "",
+    "Category": "Culture",
+    "Review": "Locals were very welcoming.",
+    "Rating": 2,
+    "Date of review": "2024-09-08"
+  },
+  {
+    "City": "Quepem",
+    "Pincode": "403705",
+    "Name": "Palm Grove",
+    "Category": "Restaurant",
+    "Review": "Loved the seafood options.",
+    "Rating": 5,
+    "Date of review": "2025-03-14"
+  },
+  {
+    "City": "Quepem",
+    "Pincode": "403705",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 4,
+    "Date of review": "2025-01-09"
+  },
+  {
+    "City": "Panaji",
+    "Pincode": "403001",
+    "Name": "Cafe Rio",
+    "Category": "Restaurant",
+    "Review": "Loved the seafood options.",
+    "Rating": 1,
+    "Date of review": "2024-08-30"
+  },
+  {
+    "City": "Cavelossim",
+    "Pincode": "403731",
+    "Name": "",
+    "Category": "Food",
+    "Review": "Overpriced meals at beach shacks.",
+    "Rating": 5,
+    "Date of review": "2023-09-19"
+  },
+  {
+    "City": "Quepem",
+    "Pincode": "403705",
+    "Name": "Goa Palace",
+    "Category": "Cleanliness",
+    "Review": "Beaches were clean and well maintained.",
+    "Rating": 5,
+    "Date of review": "2025-01-14"
+  },
+  {
+    "City": "Panaji",
+    "Pincode": "403001",
+    "Name": "",
+    "Category": "Parking",
+    "Review": "Paid parking was convenient.",
+    "Rating": 5,
+    "Date of review": "2024-12-12"
+  },
+  {
+    "City": "Panaji",
+    "Pincode": "403001",
+    "Name": "Hotel Sunshine",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 3,
+    "Date of review": "2024-04-25"
+  },
+  {
+    "City": "Calangute",
+    "Pincode": "403516",
+    "Name": "Goa Palace",
+    "Category": "Medical services",
+    "Review": "Quick medical help at hospital.",
+    "Rating": 5,
+    "Date of review": "2023-06-06"
+  },
+  {
+    "City": "Fatorda",
+    "Pincode": "403602",
+    "Name": "",
+    "Category": "Traffic",
+    "Review": "Roads are narrow but manageable.",
+    "Rating": 5,
+    "Date of review": "2024-06-21"
+  },
+  {
+    "City": "Chinchinim",
+    "Pincode": "403715",
+    "Name": "Beach Retreat",
+    "Category": "Fraud",
+    "Review": "Fraudulent guide experience.",
+    "Rating": 4,
+    "Date of review": "2023-06-29"
+  },
+  {
+    "City": "Chaudi",
+    "Pincode": "403702",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Beware of taxi overcharges.",
+    "Rating": 2,
+    "Date of review": "2024-08-21"
+  },
+  {
+    "City": "Curtorim",
+    "Pincode": "403709",
+    "Name": "Beach Retreat",
+    "Category": "Culture",
+    "Review": "Great heritage walk.",
+    "Rating": 1,
+    "Date of review": "2025-03-11"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "",
+    "Category": "Restaurant",
+    "Review": "Service was too slow.",
+    "Rating": 4,
+    "Date of review": "2024-09-14"
+  },
+  {
+    "City": "Chinchinim",
+    "Pincode": "403715",
+    "Name": "Beach Retreat",
+    "Category": "Safety",
+    "Review": "Some areas lacked street lights.",
+    "Rating": 2,
+    "Date of review": "2024-01-09"
+  },
+  {
+    "City": "Cuncolim",
+    "Pincode": "403703",
+    "Name": "Beach Retreat",
+    "Category": "Pricing",
+    "Review": "Affordable travel overall.",
+    "Rating": 4,
+    "Date of review": "2024-12-12"
+  },
+  {
+    "City": "Chinchinim",
+    "Pincode": "403715",
+    "Name": "",
+    "Category": "Restaurant",
+    "Review": "Great food, cozy place.",
+    "Rating": 2,
+    "Date of review": "2024-07-29"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "Hotel Sunshine",
+    "Category": "Restaurant",
+    "Review": "Great food, cozy place.",
+    "Rating": 3,
+    "Date of review": "2023-01-05"
+  },
+  {
+    "City": "Baga",
+    "Pincode": "403516",
+    "Name": "",
+    "Category": "Fraud",
+    "Review": "Fraudulent guide experience.",
+    "Rating": 4,
+    "Date of review": "2023-08-12"
+  },
+  {
+    "City": "Candolim",
+    "Pincode": "403515",
+    "Name": "Cafe Rio",
+    "Category": "Safety",
+    "Review": "Goa police is quite responsive.",
+    "Rating": 3,
+    "Date of review": "2023-11-28"
+  },
+  {
+    "City": "Chapora",
+    "Pincode": "403509",
+    "Name": "Sunset Shack",
+    "Category": "Parking",
+    "Review": "Difficult to find parking spots.",
+    "Rating": 1,
+    "Date of review": "2023-09-03"
+  },
+  {
+    "City": "Navelim",
+    "Pincode": "403707",
+    "Name": "Palm Grove",
+    "Category": "Travel",
+    "Review": "Too much traffic on the way.",
+    "Rating": 3,
+    "Date of review": "2025-01-06"
+  },
+  {
+    "City": "Sanguem",
+    "Pincode": "403704",
+    "Name": "Hotel Sunshine",
+    "Category": "Safety",
+    "Review": "Some areas lacked street lights.",
+    "Rating": 1,
+    "Date of review": "2023-01-20"
+  },
+  {
+    "City": "Mandrem",
+    "Pincode": "403527",
+    "Name": "",
+    "Category": "Restaurant",
+    "Review": "Loved the seafood options.",
+    "Rating": 2,
+    "Date of review": "2023-05-09"
+  },
+  {
+    "City": "Margao",
+    "Pincode": "403601",
+    "Name": "",
+    "Category": "Medical services",
+    "Review": "Friendly local doctors.",
+    "Rating": 5,
+    "Date of review": "2023-05-12"
+  },
+  {
+    "City": "Aldona",
+    "Pincode": "403508",
+    "Name": "Beach Retreat",
+    "Category": "Travel",
+    "Review": "Public transport was convenient.",
+    "Rating": 4,
+    "Date of review": "2024-06-18"
+  },
+  {
+    "City": "Colva",
+    "Pincode": "403708",
+    "Name": "Hotel Sunshine",
+    "Category": "Stay",
+    "Review": "Amazing beachfront resort!",
+    "Rating": 2,
+    "Date of review": "2023-08-06"
+  }
+]
