@@ -1,82 +1,130 @@
-// src/components/Filters.js
+'use client'
 import Select from 'react-select'
 
 const categoryOptions = [
   "Travel", "Stay", "Restaurant", "Food", "Culture",
   "Fraud", "Pricing", "Safety", "Medical services",
   "Parking", "Traffic", "Cleanliness"
-].map(cat => ({ label: cat, value: cat }))
+].map(c => ({ label: c, value: c }))
 
-export default function Filters({ citiesData, filters, setFilters }) {
+const darkSelectStyles = {
+  control: (base) => ({
+    ...base,
+    backgroundColor: '#1f1f2e',
+    borderColor: '#9333ea',
+    color: 'white',
+    boxShadow: 'none',
+    '&:hover': { borderColor: '#d946ef' }
+  }),
+  menu: (base) => ({
+    ...base,
+    backgroundColor: '#1f1f2e',
+    color: 'white'
+  }),
+  singleValue: (base) => ({
+    ...base,
+    color: 'white'
+  }),
+  multiValue: (base) => ({
+    ...base,
+    backgroundColor: '#6b21a8',
+    color: 'white'
+  }),
+  multiValueLabel: (base) => ({
+    ...base,
+    color: 'white'
+  }),
+  option: (base, state) => ({
+    ...base,
+    backgroundColor: state.isFocused ? '#9333ea' : '#1f1f2e',
+    color: 'white',
+    cursor: 'pointer'
+  })
+}
+
+export default function Filters({ citiesData, filters, setFilters, filteredData = [] }) {
   const cityOptions = citiesData.map(c => ({ label: c.city, value: c.city }))
-
   const selectedPincodeValues = filters.cities.length
     ? citiesData
-        .filter(c => filters.cities.includes(c.city))
+        .filter(c => filters.cities.some(sel => sel.value === c.city))
         .flatMap(c => c.pincodes)
-        .map(p => ({ label: p, value: p }))
+        .map(pin => ({ label: pin, value: pin }))
     : []
 
+  // ✅ Get all sources from full dataset
+  const sourceOptions = [...new Set(filteredData.map(r => r.source || 'Unknown'))]
+    .map(s => ({ label: s, value: s }))
+
   return (
-    <div className="flex flex-wrap gap-4">
-      <div className="min-w-[200px]">
-        <label className="block mb-1 font-semibold">City</label>
+    <div className="grid md:grid-cols-3 gap-4">
+      {/* City */}
+      <div>
+        <label className="block mb-1 text-purple-300 font-semibold">City</label>
         <Select
           isMulti
           options={cityOptions}
-          value={cityOptions.filter(opt => filters.cities.includes(opt.value))}
-          onChange={selected => setFilters(prev => ({
-            ...prev,
-            cities: selected.map(s => s.value),
-            pincodes: [] // reset pincode if city changes
-          }))}
+          value={filters.cities}
+          onChange={(val) => setFilters({ ...filters, cities: val, pincodes: [] })}
+          styles={darkSelectStyles}
         />
       </div>
 
-      <div className="min-w-[200px]">
-        <label className="block mb-1 font-semibold">Pincode</label>
+      {/* Pincode */}
+      <div>
+        <label className="block mb-1 text-purple-300 font-semibold">Pincode</label>
         <Select
           isMulti
-          isDisabled={!filters.cities.length}
           options={selectedPincodeValues}
-          value={selectedPincodeValues.filter(p => filters.pincodes.includes(p.value))}
-          onChange={selected => setFilters(prev => ({
-            ...prev,
-            pincodes: selected.map(s => s.value)
-          }))}
+          value={filters.pincodes}
+          onChange={(val) => setFilters({ ...filters, pincodes: val })}
+          styles={darkSelectStyles}
+          isDisabled={!filters.cities.length}
         />
       </div>
 
-      <div className="min-w-[200px]">
-        <label className="block mb-1 font-semibold">Category</label>
+      {/* Category */}
+      <div>
+        <label className="block mb-1 text-purple-300 font-semibold">Category</label>
         <Select
           options={categoryOptions}
-          value={categoryOptions.find(opt => opt.value === filters.category)}
-          onChange={selected => setFilters(prev => ({
-            ...prev,
-            category: selected ? selected.value : null
-          }))}
+          value={filters.category}
+          onChange={(val) => setFilters({ ...filters, category: val })}
           isClearable
+          styles={darkSelectStyles}
         />
       </div>
 
+      {/* Source */}
       <div>
-        <label className="block mb-1 font-semibold">From</label>
+        <label className="block mb-1 text-purple-300 font-semibold">Source</label>
+        <Select
+          options={sourceOptions}
+          value={filters.source}
+          onChange={(val) => setFilters({ ...filters, source: val })}
+          isClearable
+          styles={darkSelectStyles}
+        />
+      </div>
+
+      {/* Start Date */}
+      <div>
+        <label className="block mb-1 text-purple-300 font-semibold">From Date</label>
         <input
           type="date"
-          className="border p-2 rounded"
           value={filters.startDate}
-          onChange={e => setFilters(prev => ({ ...prev, startDate: e.target.value }))}
+          onChange={e => setFilters({ ...filters, startDate: e.target.value })}
+          className="w-full p-2 rounded bg-[#1f1f2e] border border-purple-600 text-white focus:ring-2 focus:ring-purple-400"
         />
       </div>
 
+      {/* End Date */}
       <div>
-        <label className="block mb-1 font-semibold">To</label>
+        <label className="block mb-1 text-purple-300 font-semibold">To Date</label>
         <input
           type="date"
-          className="border p-2 rounded"
           value={filters.endDate}
-          onChange={e => setFilters(prev => ({ ...prev, endDate: e.target.value }))}
+          onChange={e => setFilters({ ...filters, endDate: e.target.value })}
+          className="w-full p-2 rounded bg-[#1f1f2e] border border-purple-600 text-white focus:ring-2 focus:ring-purple-400"
         />
       </div>
     </div>
