@@ -6,6 +6,8 @@ import AIInsights from '@/components/AIInsights'
 import AISummary from '@/components/AISummary'
 import ReviewList from '@/components/ReviewList'
 import ChatWithData from '@/components/ChatWithData'
+import UpdateDataPopup from '@/components/UpdateDataPopup'
+
 
 export default function Home() {
   const [allReviews, setAllReviews] = useState([])
@@ -87,6 +89,8 @@ export default function Home() {
       <div className="flex flex-wrap gap-4 mb-8 items-center">
         <AIInsights filteredData={filteredReviews || []} />
         <AISummary filteredData={filteredReviews || []} />
+        <UpdateDataPopup />
+
         <button
           onClick={() => setShowFeedback(prev => !prev)}
           className="bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white px-4 py-2 rounded-xl hover:scale-105 shadow-lg transition"
