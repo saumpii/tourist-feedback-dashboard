@@ -85,22 +85,24 @@ export default function Home() {
         <ChartView filteredData={filteredReviews || []} />
       </div>
 
-      <div className="flex flex-wrap gap-4 mb-8 items-center">
-        <AIInsights filteredData={filteredReviews || []} />
-        <AISummary filteredData={filteredReviews || []} />
-        <TestSurveyForm/>
-        <UpdateDataPopup />
+      <div className="flex flex-nowrap gap-2 items-center justify-between flex-wrap sm:flex-nowrap mb-6 overflow-x-auto">
+  <AIInsights filteredData={filteredReviews || []} />
+  <AISummary filteredData={filteredReviews || []} />
+  <TestSurveyForm />
+  <UpdateDataPopup />
+  <button
+    onClick={() => setShowFeedback(prev => !prev)}
+    className="shrink-0 w-fit bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white px-3 py-2 rounded-xl hover:scale-105 shadow transition text-sm"
+  >
+    {showFeedback ? '🙈 Hide Feedback' : '🧾 Check All Feedback'}
+  </button>
+</div>
 
-        <button
-          onClick={() => setShowFeedback(prev => !prev)}
-          className="bg-gradient-to-r from-fuchsia-600 to-violet-600 text-white px-4 py-2 rounded-xl hover:scale-105 shadow-lg transition"
-        >
-          {showFeedback ? '🙈 Hide Feedback' : '🧾 Check All Feedback'}
-        </button>
-        <p className="text-sm text-gray-400 ml-auto italic">
-          {filteredReviews.length} reviews loaded
-        </p>
-      </div>
+<p className="text-sm text-gray-400 italic text-right mb-6">
+  {filteredReviews.length} reviews loaded
+</p>
+
+        
 
       {showFeedback && (
         <div className="bg-[#1a1a40] shadow-2xl border border-pink-600 rounded-xl p-6 mb-12">

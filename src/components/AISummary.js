@@ -4,6 +4,7 @@ import { useState } from 'react'
 export default function AISummary({ filteredData = [] }) {
   const [summary, setSummary] = useState('')
   const [loading, setLoading] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
 
   const generateSummary = async () => {
     setLoading(true)
@@ -15,9 +16,11 @@ export default function AISummary({ filteredData = [] }) {
         body: JSON.stringify({ data: filteredData })
       })
       const result = await res.json()
-      setSummary(result.output)
+      setSummary(result.output || 'No summary available.')
+      setShowPopup(true)
     } catch (err) {
       setSummary('Failed to generate summary.')
+      setShowPopup(true)
     }
     setLoading(false)
   }
@@ -32,12 +35,22 @@ export default function AISummary({ filteredData = [] }) {
         {loading ? '🌀 Summarizing...' : '📝 Generate Summary'}
       </button>
 
-      {summary && (
-        <div className="mt-4 p-4 bg-[#1f1f2e] border border-pink-500 rounded-lg text-sm whitespace-pre-wrap text-pink-100 shadow-lg">
-          {summary}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 bg-black bg-opacity-70 flex items-center justify-center p-4">
+          <div className="bg-[#1f1f2e] border border-pink-500 rounded-lg w-full max-w-lg max-h-[60vh] overflow-y-auto shadow-xl p-6 text-white text-[15px] leading-relaxed">
+            <h3 className="text-lg font-bold text-pink-300 mb-4">📋 AI Summary</h3>
+            <p className="whitespace-pre-wrap">{summary}</p>
+            <div className="text-center mt-6">
+              <button
+                onClick={() => setShowPopup(false)}
+                className="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded text-white shadow"
+              >
+                OK
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>
   )
 }
-
