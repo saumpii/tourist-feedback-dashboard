@@ -45,34 +45,58 @@ export async function POST(req) {
   try {
     const body = await req.json()
     const aiFields = []
-    const reviewText = body.review || ''
+    const reviewTextOriginal = body.review || ''
 
-    // Rating (via sentiment)
+    // ✅ Language detection and translation
+    const { loadModule } = await import('cld3-asm')
+    const cldFactory = await loadModule()
+    const langIdentifier = cldFactory.create(1)
+    const langInfo = langIdentifier.findLanguage(reviewTextOriginal)
+    const detectedLang = langInfo?.language || 'en'
+
+    let translatedReview = reviewTextOriginal
+    let wasTranslated = false
+
+    if (detectedLang !== 'en') {
+      try {
+        const translateModule = await import('@vitalets/google-translate-api')
+        const translateFn = translateModule.translate || translateModule.default?.translate
+        const result = await translateFn(reviewTextOriginal, { to: 'en' })
+        translatedReview = result.text
+        wasTranslated = true
+      } catch (err) {
+        console.error('❌ Translation failed:', err)
+      }
+    }
+
+    // 🎯 Rating (via sentiment)
     let rating = body.rating
-    if (!rating && reviewText) {
-      const score = sentiment.analyze(reviewText).score
+    if (!rating && translatedReview) {
+      const score = sentiment.analyze(translatedReview).score
       rating = scoreToRating(score)
       aiFields.push("Rating")
     }
 
-    // Category via Claude if not provided
+    // 🎯 Category via Claude if not provided
     let category = body.category || "Unknown"
-    if ((!body.category || body.category === "Unknown") && reviewText) {
-      category = await getCategoryFromAI(reviewText)
+    if ((!body.category || body.category === "Unknown") && translatedReview) {
+      category = await getCategoryFromAI(translatedReview)
       aiFields.push("Category")
     }
 
-    // Track missing fields
+    // ✅ Final record
     const data = {
       City: body.city || "Unknown",
       Pincode: body.pincode || "Unknown",
       Name: body.name || "Unknown",
       Category: category,
-      Review: reviewText,
+      Review: translatedReview,
       Rating: Number(rating) || 3,
       "Date of review": new Date().toISOString(),
       Source: "Survey",
-      aiGeneratedFields: aiFields
+      aiGeneratedFields: aiFields,
+      originalLanguage: detectedLang,
+      wasTranslated
     }
 
     if (!body.city) aiFields.push("City")
